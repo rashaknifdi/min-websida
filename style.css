@@ -1,0 +1,148 @@
+:root {
+  --bg-main: #f9f4f5;
+  --bg-alt: #F3EBFA;
+  --text-dark: #4B5563;
+  --accent: #DA50A1;
+  --font-main: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navigationsmeny */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo img { 
+  height: 100px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hero-section – mobil först */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+ 
+}
+
+/* Sektioner */
+.section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section.alt {
+  background-color: var(--bg-alt);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.section h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color:#b350da;
+}
+
+.section ul {
+  padding-left: 1.5rem;
+}
+
+.section a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+}
